@@ -9,25 +9,55 @@
 /* Begin PBXBuildFile section */
 		47D6F6D92C0A4EB80055E07A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D6F6D82C0A4EB80055E07A /* AppDelegate.swift */; };
 		47D6F6DB2C0A4EB80055E07A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D6F6DA2C0A4EB80055E07A /* SceneDelegate.swift */; };
-		47D6F6DD2C0A4EB80055E07A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D6F6DC2C0A4EB80055E07A /* ViewController.swift */; };
+		47D6F6DD2C0A4EB80055E07A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D6F6DC2C0A4EB80055E07A /* MainViewController.swift */; };
 		47D6F6E02C0A4EB80055E07A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 47D6F6DF2C0A4EB80055E07A /* Base */; };
 		47D6F6E22C0A4EBA0055E07A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47D6F6E12C0A4EBA0055E07A /* Assets.xcassets */; };
 		47D6F6E52C0A4EBA0055E07A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 47D6F6E42C0A4EBA0055E07A /* Base */; };
+		47D6F6EE2C0A509C0055E07A /* WordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D6F6ED2C0A509C0055E07A /* WordManager.swift */; };
+		47D6F6F12C0A50BA0055E07A /* WordRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D6F6F02C0A50BA0055E07A /* WordRepository.swift */; };
+		47D6F6F32C0A516F0055E07A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D6F6F22C0A516F0055E07A /* Constants.swift */; };
+		47D6F6F72C0A540F0055E07A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D6F6F62C0A540F0055E07A /* MainViewModel.swift */; };
+		47D6F6FA2C0A59570055E07A /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D6F6F92C0A59570055E07A /* WordCell.swift */; };
+		47D6F7062C0A5CA80055E07A /* Compass_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D6F7052C0A5CA80055E07A /* Compass_TestTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47D6F7072C0A5CA80055E07A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47D6F6CD2C0A4EB80055E07A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47D6F6D42C0A4EB80055E07A;
+			remoteInfo = "Compass Test";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		47D6F6D52C0A4EB80055E07A /* Compass Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Compass Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D6F6D82C0A4EB80055E07A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47D6F6DA2C0A4EB80055E07A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		47D6F6DC2C0A4EB80055E07A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		47D6F6DC2C0A4EB80055E07A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		47D6F6DF2C0A4EB80055E07A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47D6F6E12C0A4EBA0055E07A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47D6F6E42C0A4EBA0055E07A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47D6F6E62C0A4EBA0055E07A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47D6F6ED2C0A509C0055E07A /* WordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordManager.swift; sourceTree = "<group>"; };
+		47D6F6F02C0A50BA0055E07A /* WordRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordRepository.swift; sourceTree = "<group>"; };
+		47D6F6F22C0A516F0055E07A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		47D6F6F62C0A540F0055E07A /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		47D6F6F92C0A59570055E07A /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
+		47D6F7032C0A5CA80055E07A /* Compass TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Compass TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D6F7052C0A5CA80055E07A /* Compass_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compass_TestTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		47D6F6D22C0A4EB80055E07A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D6F7002C0A5CA80055E07A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				47D6F6D72C0A4EB80055E07A /* Compass Test */,
+				47D6F7042C0A5CA80055E07A /* Compass TestTests */,
 				47D6F6D62C0A4EB80055E07A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				47D6F6D52C0A4EB80055E07A /* Compass Test.app */,
+				47D6F7032C0A5CA80055E07A /* Compass TestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +88,68 @@
 		47D6F6D72C0A4EB80055E07A /* Compass Test */ = {
 			isa = PBXGroup;
 			children = (
+				47D6F6F22C0A516F0055E07A /* Constants.swift */,
+				47D6F6F42C0A53F20055E07A /* ViewControllers */,
+				47D6F6EF2C0A50AD0055E07A /* Repository */,
+				47D6F6EC2C0A508D0055E07A /* Managers */,
 				47D6F6D82C0A4EB80055E07A /* AppDelegate.swift */,
 				47D6F6DA2C0A4EB80055E07A /* SceneDelegate.swift */,
-				47D6F6DC2C0A4EB80055E07A /* ViewController.swift */,
 				47D6F6DE2C0A4EB80055E07A /* Main.storyboard */,
 				47D6F6E12C0A4EBA0055E07A /* Assets.xcassets */,
 				47D6F6E32C0A4EBA0055E07A /* LaunchScreen.storyboard */,
 				47D6F6E62C0A4EBA0055E07A /* Info.plist */,
 			);
 			path = "Compass Test";
+			sourceTree = "<group>";
+		};
+		47D6F6EC2C0A508D0055E07A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				47D6F6ED2C0A509C0055E07A /* WordManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		47D6F6EF2C0A50AD0055E07A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				47D6F6F02C0A50BA0055E07A /* WordRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		47D6F6F42C0A53F20055E07A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				47D6F6F52C0A53FD0055E07A /* Main */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		47D6F6F52C0A53FD0055E07A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				47D6F6F82C0A594B0055E07A /* Cell */,
+				47D6F6DC2C0A4EB80055E07A /* MainViewController.swift */,
+				47D6F6F62C0A540F0055E07A /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		47D6F6F82C0A594B0055E07A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				47D6F6F92C0A59570055E07A /* WordCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		47D6F7042C0A5CA80055E07A /* Compass TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				47D6F7052C0A5CA80055E07A /* Compass_TestTests.swift */,
+			);
+			path = "Compass TestTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +172,24 @@
 			productReference = 47D6F6D52C0A4EB80055E07A /* Compass Test.app */;
 			productType = "com.apple.product-type.application";
 		};
+		47D6F7022C0A5CA80055E07A /* Compass TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47D6F7092C0A5CA80055E07A /* Build configuration list for PBXNativeTarget "Compass TestTests" */;
+			buildPhases = (
+				47D6F6FF2C0A5CA80055E07A /* Sources */,
+				47D6F7002C0A5CA80055E07A /* Frameworks */,
+				47D6F7012C0A5CA80055E07A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47D6F7082C0A5CA80055E07A /* PBXTargetDependency */,
+			);
+			name = "Compass TestTests";
+			productName = "Compass TestTests";
+			productReference = 47D6F7032C0A5CA80055E07A /* Compass TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +202,10 @@
 				TargetAttributes = {
 					47D6F6D42C0A4EB80055E07A = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					47D6F7022C0A5CA80055E07A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 47D6F6D42C0A4EB80055E07A;
 					};
 				};
 			};
@@ -116,6 +223,7 @@
 			projectRoot = "";
 			targets = (
 				47D6F6D42C0A4EB80055E07A /* Compass Test */,
+				47D6F7022C0A5CA80055E07A /* Compass TestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +239,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		47D6F7012C0A5CA80055E07A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,13 +253,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47D6F6DD2C0A4EB80055E07A /* ViewController.swift in Sources */,
+				47D6F6F72C0A540F0055E07A /* MainViewModel.swift in Sources */,
+				47D6F6DD2C0A4EB80055E07A /* MainViewController.swift in Sources */,
 				47D6F6D92C0A4EB80055E07A /* AppDelegate.swift in Sources */,
+				47D6F6F12C0A50BA0055E07A /* WordRepository.swift in Sources */,
 				47D6F6DB2C0A4EB80055E07A /* SceneDelegate.swift in Sources */,
+				47D6F6FA2C0A59570055E07A /* WordCell.swift in Sources */,
+				47D6F6EE2C0A509C0055E07A /* WordManager.swift in Sources */,
+				47D6F6F32C0A516F0055E07A /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D6F6FF2C0A5CA80055E07A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D6F7062C0A5CA80055E07A /* Compass_TestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47D6F7082C0A5CA80055E07A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47D6F6D42C0A4EB80055E07A /* Compass Test */;
+			targetProxy = 47D6F7072C0A5CA80055E07A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		47D6F6DE2C0A4EB80055E07A /* Main.storyboard */ = {
@@ -339,6 +475,40 @@
 			};
 			name = Release;
 		};
+		47D6F70A2C0A5CA80055E07A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "martindesimone.Compass-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Compass Test.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Compass Test";
+			};
+			name = Debug;
+		};
+		47D6F70B2C0A5CA80055E07A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "martindesimone.Compass-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Compass Test.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Compass Test";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -356,6 +526,15 @@
 			buildConfigurations = (
 				47D6F6EA2C0A4EBA0055E07A /* Debug */,
 				47D6F6EB2C0A4EBA0055E07A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47D6F7092C0A5CA80055E07A /* Build configuration list for PBXNativeTarget "Compass TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D6F70A2C0A5CA80055E07A /* Debug */,
+				47D6F70B2C0A5CA80055E07A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

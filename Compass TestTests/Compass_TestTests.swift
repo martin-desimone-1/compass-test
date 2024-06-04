@@ -5,6 +5,8 @@
 //  Created by Martin De Simone on 31/05/2024.
 //
 
+@testable import Compass_Test
+
 import XCTest
 
 final class Compass_TestTests: XCTestCase {
@@ -17,19 +19,45 @@ final class Compass_TestTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
+    func testWordManager() async throws {
+        let failureWorkManager = AppWordManager(wordRepository: MockWordFailureRepository())
+        let successWordManager = AppWordManager(wordRepository: MockWordSuccessRepository())
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
+        
+        let firstResult = await failureWorkManager.fetchEvery10Character()
+        XCTAssert(firstResult.isEmpty, "fetchEvery10Character should be empty")
+        
+        let secondResult = await successWordManager.fetchEvery10Character()
+        XCTAssert(!secondResult.isEmpty, "fetchEvery10Character result should not be empty")
+        
+        let thirdResult = await failureWorkManager.fetchWordCounter()
+        XCTAssert(thirdResult.isEmpty, "fetchWordCounter should be empty")
+        
+        let fourthResult = await successWordManager.fetchWordCounter()
+        XCTAssert(!fourthResult.isEmpty, "fetchWordCounter result should not be empty")
+        
+        let fifthResult = await failureWorkManager.fetchWords()
+        XCTAssert(fifthResult == nil, "fetchWords should be nil")
+        
+        let sixResult = await successWordManager.fetchWords()
+        XCTAssert(sixResult != nil, "fetchWords should not be nil")
+    }
+    
+
+    func testMainViewModel() async throws {
+        let viewModel = MainViewModel(wordsManager: MockSuccessWordManager())
+        await viewModel.fetchData()
+        
+        XCTAssert(!viewModel.characterList.isEmpty, "characterList should not be empty")
+        XCTAssert(!viewModel.wordCount.isEmpty, "wordCount should not be empty")
+        XCTAssert(!viewModel.wordList.isEmpty, "wordList should not be empty")
+        
+        let failureViewModel = MainViewModel(wordsManager: MockFailureWordManager())
+        await failureViewModel.fetchData()
+        
+        XCTAssert(failureViewModel.characterList.isEmpty, "characterList should be empty")
+        XCTAssert(failureViewModel.wordCount.isEmpty, "wordCount should be empty")
+        XCTAssert(failureViewModel.wordList.isEmpty, "wordList should be empty")
     }
 
 }
